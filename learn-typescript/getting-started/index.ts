@@ -3,5 +3,3 @@ function test(a: number, b: number): number {
 }
 
 test(10,20)
-
-

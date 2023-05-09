@@ -38,12 +38,12 @@ function sum2_c(): number {
   return 10;
 }
 
-sum2_a(10, 20, 30, 40); // 인자개수 에러
-sum2_b(10, 20, 30, 40); // 인자개수 에러
+// sum2_a(10, 20, 30, 40); // 인자개수 에러
+// sum2_b(10, 20, 30, 40); // 인자개수 에러
 
 // 옵셔널 파라미터
 function log_1(a: string, b: number) {}
-log_1("hello world"); // 인자 2개인데 1개만 있다는 에러
+// log_1("hello world"); // 인자 2개인데 1개만 있다는 에러
 log_1("hello world", 2);
 
 function log_2(a: string, b?: number) {}
