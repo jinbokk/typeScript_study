@@ -23,6 +23,6 @@ let num: number;
 num = 'str' as any;
 
 const divElement = document.querySelector('#app');
-divElement.innerHTML;
+// divElement.innerHTML;
 // const empty = document.querySelector('#app') as null;
 // empty.innerHTML;
