@@ -13,6 +13,9 @@ function getValue<T>(value: T): T {
 getValue('hi').toLocaleUpperCase();
 getValue(100).toLocaleString();
 
+// union타입에서는 return값이 곧바로 적용되지 않기 때문에, 특정 타입에 대한 자바스크립트
+// 빌트인 API를 사용했을때 에러가 출력되는 경우가 생기는 등의 한계가 있다.
+
 // 제네릭 기본 문법 - 인터페이스
 interface Developer<T> {
   name: string;
