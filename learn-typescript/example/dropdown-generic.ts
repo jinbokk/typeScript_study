@@ -33,6 +33,8 @@ const numberOfProducts: DropdownItems<number>[] = [
 
 function createDropdownItem<T>(item: DropdownItems<T>) {
   const option = document.createElement("option");
+
+  if()
   option.value = item.value.toString();
   option.innerText = item.value.toString();
   option.selected = item.selected;

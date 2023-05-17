@@ -10,7 +10,7 @@ function getArray(value: string[]) {
 function getValue<T>(value: T): T {
   return value;
 }
-getValue('hi').toLocaleUpperCase();
+getValue("hi").toLocaleUpperCase();
 getValue(100).toLocaleString();
 
 // union타입에서는 return값이 곧바로 적용되지 않기 때문에, 특정 타입에 대한 자바스크립트
@@ -21,7 +21,7 @@ interface Developer<T> {
   name: string;
   age: T;
 }
-const tony: Developer<number> = { name: 'tony', age: 100 };
+const tony: Developer<number> = { name: "tony", age: 100 };
 
 // 제네릭 타입 제한 - 구체적인 타입
 function getNumberAndArray<T>(value: T): T {
@@ -41,16 +41,17 @@ interface ShoppingItems {
   address: string;
   stock: number;
 }
+
 function getAllowedOptions<T extends keyof ShoppingItems>(option: T): T {
-  if (option === 'name' || option === 'address') {
-    console.log('option type is string');
+  if (option === "name" || option === "address") {
+    console.log("option type is string");
     return option;
   }
-  if (option === 'price' || option === 'stock') {
-    console.log('option type is number');
+  if (option === "price" || option === "stock") {
+    console.log("option type is number");
     return option;
   }
 }
-getAllowedOptions('nothing');
+getAllowedOptions("address");
 // const a = getAllowedOptions('name');
 // a.toUpperCase(); // Name
